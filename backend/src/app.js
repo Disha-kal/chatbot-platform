@@ -13,7 +13,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://your-frontend-url.onrender.com" 
+      "https://chatbot-platform-6.onrender.com" 
     ],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"]
