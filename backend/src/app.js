@@ -11,9 +11,11 @@ app.use("/uploads", express.static(path.join("uploads")));
 // Middlewares
 app.use(
   cors({
-    origin: "http://localhost:5173", // Vite frontend
-    credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"]
+    origin: [
+      "http://localhost:5173",
+      "https://your-frontend-url.onrender.com" 
+    ],
+    credentials: true
   })
 );
 
