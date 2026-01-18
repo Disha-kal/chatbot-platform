@@ -15,7 +15,8 @@ app.use(
       "http://localhost:5173",
       "https://your-frontend-url.onrender.com" 
     ],
-    credentials: true
+    credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"]
   })
 );
 
